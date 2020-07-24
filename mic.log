@@ -17,3 +17,26 @@ mic   _utils.py          INFO     Command: {'name': 'upload', 'command_parameter
 mic   github.py          INFO     Creating the git repository
 mic   github.py          INFO     Compressing code
 mic   github.py          INFO     Creating a new commit
+mic   github.py          INFO     Selected repository already exists
+mic   commands.py        ERROR    Upload failed: cannot push because a reference that you are trying to update on the remote contains commits that are not present locally.
+Traceback (most recent call last):
+  File "/Users/mosorio/repos/mic/src/mic/click_encapsulate/commands.py", line 663, in upload
+    push(mic_config_path.parent, mic_config_path, name, profile)
+  File "/Users/mosorio/repos/mic/src/mic/publisher/github.py", line 35, in push
+    url = check_create_remote_repo(repo, profile, repository_name)
+  File "/Users/mosorio/repos/mic/src/mic/publisher/github.py", line 129, in check_create_remote_repo
+    git_push(repo, profile)
+  File "/Users/mosorio/repos/mic/src/mic/publisher/github.py", line 204, in git_push
+    remote.push(['refs/heads/master'], callbacks=callbacks)
+  File "/Users/mosorio/.pyenv/versions/3.7.6/envs/mic/lib/python3.7/site-packages/pygit2/remote.py", line 224, in push
+    payload.check_error(err)
+  File "/Users/mosorio/.pyenv/versions/3.7.6/envs/mic/lib/python3.7/site-packages/pygit2/callbacks.py", line 93, in check_error
+    check_error(error_code)
+  File "/Users/mosorio/.pyenv/versions/3.7.6/envs/mic/lib/python3.7/site-packages/pygit2/errors.py", line 65, in check_error
+    raise GitError(message)
+_pygit2.GitError: cannot push because a reference that you are trying to update on the remote contains commits that are not present locally.
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'upload', 'command_parameters': {'mic_file': {'value': '/Users/mosorio/test/mic/mic.yaml', 'type': 'str'}, 'profile': {'value': 'mosorio', 'type': 'str'}, 'model_configuration': {'value': True, 'type': 'bool'}, 'data_transformation': {'value': None, 'type': 'NoneType'}}}
+mic   github.py          INFO     Creating the git repository
+mic   github.py          INFO     Compressing code
+mic   github.py          INFO     Creating a new commit
