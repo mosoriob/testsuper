@@ -6,3 +6,6 @@ framework: !!python/object/apply:mic.constants.Framework
   - general
   - mintproject/generic:latest
 container_name: testsuper_c41a96ea
+github_repo_url: https://github.com/mosoriob/testsuper.git
+version: 20.7.1
+mint_component_url: https://raw.githubusercontent.com/mosoriob/testsuper/master/mint_component.zip
