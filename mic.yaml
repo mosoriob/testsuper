@@ -1,11 +1,11 @@
 step: 1
 name: testsuper
-docker_image: testsuper:latest
+docker_image: mosorio/testsuper:20.7.3
 framework: !!python/object/apply:mic.constants.Framework
 - !!python/tuple
   - general
   - mintproject/generic:latest
 container_name: testsuper_c41a96ea
 github_repo_url: https://github.com/mosoriob/testsuper.git
-version: 20.7.2
+version: 20.7.3
 mint_component_url: https://raw.githubusercontent.com/mosoriob/testsuper/master/mint_component.zip
