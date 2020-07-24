@@ -1,0 +1,8 @@
+step: 1
+name: testsuper
+docker_image: testsuper:latest
+framework: !!python/object/apply:mic.constants.Framework
+- !!python/tuple
+  - general
+  - mintproject/generic:latest
+container_name: testsuper_c41a96ea

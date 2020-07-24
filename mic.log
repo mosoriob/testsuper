@@ -1,0 +1,19 @@
+mic   _utils.py          INFO     Log file created
+mic   _utils.py          INFO     OS: {'name': 'Darwin', 'data': {'version': 'Darwin Kernel Version 18.7.0: Tue Aug 20 16:57:14 PDT 2019; root:xnu-4903.271.2~2/RELEASE_X86_64', 'release': '18.7.0', 'platform': 'Darwin-18.7.0-x86_64-i386-64bit'}}
+mic   _utils.py          INFO     MIC Version: 1.2.0
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'start', 'command_parameters': {'name': {'value': 'testsuper', 'type': 'str'}, 'image': {'value': None, 'type': 'NoneType'}}}
+mic   initialization.py  INFO     When creating base dir found base directory already exists: /Users/mosorio/test/mic
+mic   initialization.py  INFO     MIC has initialized the component
+mic   initialization.py  DEBUG    detecting framework(s): [<Framework.GENERIC: ('general', 'mintproject/generic:latest')>, <Framework.PYTHON37: ('python3.7', 'mintproject/python:3.7', '.py')>, <Framework.PYTHON38: ('python3.8', 'mintproject/python:3.8', '.py')>, <Framework.CONDA: ('conda4.7.12', 'mintproject/conda:4.7.12', '.py')>]
+mic   docker.py          INFO     Downloading and building base docker image
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/Users/mosorio/test/mic/mic.yaml', 'data': {'key': 'name', 'value': 'testsuper'}}
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/Users/mosorio/test/mic/mic.yaml', 'data': {'key': 'docker_image', 'value': 'testsuper:latest'}}
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/Users/mosorio/test/mic/mic.yaml', 'data': {'key': 'framework', 'value': <Framework.GENERIC: ('general', 'mintproject/generic:latest')>}}
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/Users/mosorio/test/mic/mic.yaml', 'data': {'key': 'container_name', 'value': 'testsuper_c41a96ea'}}
+mic   commands.py        INFO     start done
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'upload', 'command_parameters': {'mic_file': {'value': '/Users/mosorio/test/mic/mic.yaml', 'type': 'str'}, 'profile': {'value': 'mosorio', 'type': 'str'}, 'model_configuration': {'value': True, 'type': 'bool'}, 'data_transformation': {'value': None, 'type': 'NoneType'}}}
+mic   github.py          INFO     Creating the git repository
+mic   github.py          INFO     Compressing code
+mic   github.py          INFO     Creating a new commit
